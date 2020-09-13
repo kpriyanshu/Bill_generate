@@ -13,7 +13,7 @@ class Bill_app:
 
 
         #====== variables ========\
-        #======cosmatics =========
+        #======fruits =========
         self.mango=IntVar()
         self.apple=IntVar()
         self.banana=IntVar()
@@ -21,7 +21,7 @@ class Bill_app:
         self.orange=IntVar()
         self.coconut=IntVar()
         
-        #====== grocery ===========
+        #====== flower ===========
         self.rose=IntVar()
         self.lotus=IntVar()
         self.sunflower=IntVar()
@@ -29,7 +29,7 @@ class Bill_app:
         self.jasmine=IntVar()
         self.dhalia=IntVar()
 
-        #====== cold drinks ==========
+        #====== vegetables ==========
         self.cabbage=IntVar()
         self.carrot=IntVar()
         self.tomato=IntVar()
@@ -284,7 +284,7 @@ class Bill_app:
         else:
 
             self.welcome_bill()
-            #==== cosmatics ========
+            #==== fruits ========
             if self.mango.get()!=0:
                 self.textarea.insert(END,f"\n Mango\t\t{self.mango.get()}\t\t{self.c_mango_p}")
             if self.banana.get()!=0:
@@ -299,7 +299,7 @@ class Bill_app:
                 self.textarea.insert(END,f"\n Cocon\t\t{self.coconut.get()}\t\t{self.c_l_p}")   
 
 
-            #==== grocery ========
+            #==== flower ========
             if self.rose.get()!=0:
                 self.textarea.insert(END,f"\n Rice \t\t{self.rose.get()}\t\t{self.g_r_p}")
             if self.lotus.get()!=0:
@@ -315,7 +315,7 @@ class Bill_app:
 
 
 
-            #==== Cold Drinks ========
+            #==== vegetables ========
             if self.cabbage.get()!=0:
                 self.textarea.insert(END,f"\n cabbage\t\t{self.cabbage.get()}\t\t{self.cd_m_p}")
             if self.carrot.get()!=0:
